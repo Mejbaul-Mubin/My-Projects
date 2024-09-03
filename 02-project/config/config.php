@@ -1,7 +1,7 @@
 <?php
 
 define("HOST", "localhost");
-define("DBNAME", "pay");
+define("DBNAME", "form");
 define("USERNAME", "root");
 define("PASSWORD", "");
 
