@@ -1,4 +1,13 @@
 <?php require "includes/header.php";?>
+
+<?php
+if (isset($_POST['submit'])) {
+    if (empty($_POST['title']) or empty($_POST['post_author']) or empty($_POST['post_author'])) {
+        echo "<script>alert('one or more input are empty'); </script>";
+    }
+}
+
+?>
           <!-- Main content -->
           <div style="margin-top: 57px;" class="col-lg-9 mb-3">
 
