@@ -1,13 +1,37 @@
-<?php require "includes/header.php";?>
+
 
 <?php
+
+require "includes/header.php";
+require "config/config.php";
+
 if (isset($_POST['submit'])) {
-    if (empty($_POST['title']) or empty($_POST['post_author']) or empty($_POST['post_author'])) {
+    if (empty($_POST['title']) or empty($_POST['post_author']) or empty($_POST['post_author']) or empty($_POST['body'])) {
         echo "<script>alert('one or more input are empty'); </script>";
+    } else {
+        $title = $_POST['title'];
+        $post_author = $_POST['post_author'];
+        $category = $_POST['category'];
+        $body = $_POST['body'];
+
+        $insert = $conn->prepare("INSERT INTO posts(title, post_author, category, body)
+VALUES (:title, :post_author, :category, :body)");
+
+        $insert->execute([
+            ":title" => $title,
+            ":post_author" => $post_author,
+            ":category" => $category,
+            ":body" => $body,
+        ]);
+
+        header("location: index.php");
+
     }
+
 }
 
 ?>
+
           <!-- Main content -->
           <div style="margin-top: 57px;" class="col-lg-9 mb-3">
 
@@ -19,6 +43,14 @@ if (isset($_POST['submit'])) {
                   <label for="exampleInputEmail1" class="form-label">Title </label>
                   <input type="text" name="title" placeholder="write title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
+
+                <div class="form-group mb-3">
+                    <label for="exampleFormControlTextarea1">Body</label>
+                    <textarea name="body" placeholder="write body"
+                      class="form-control"
+                      rows="3"
+                    ></textarea>
+                  </div>
 
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Post Author</label>
