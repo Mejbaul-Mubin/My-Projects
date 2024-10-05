@@ -1,6 +1,7 @@
 1.  প্রথমেই index.php ফাইল তৈরি করে নিলাম। তারপর একটি সাধারণ বয়লার প্লেট তৈরি করে নিলাম।
 
-```html
+```php
+// index.php
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +13,8 @@
 </html>
 ```
 
-```html
+```php
+// index.php
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,10 +29,35 @@
       </div>
 
       <div class="searchContainer">
-        <input class="searchBox" type="text" name="term" />
-        <input class="searchButton" type="submit" value="Search" />
+        <form action="search.php" mathod="GET">
+          <input class="searchBox" type="text" name="term" />
+          <input class="searchButton" type="submit" value="Search" />
+        </form>
       </div>
     </div>
   </body>
 </html>
+```
+
+```php
+//search.php
+<?php
+echo "Hello";
+?>
+```
+
+```php
+//search.php
+<?php
+echo $_GET["term"];
+?>
+```
+
+```css
+ /*
+ assets/css/style.css
+ */
+<?php
+echo $_GET["term"];
+?>
 ```
