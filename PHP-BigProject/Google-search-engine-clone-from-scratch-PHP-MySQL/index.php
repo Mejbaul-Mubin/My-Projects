@@ -7,6 +7,7 @@
     <title>goodle - Goodle Search</title>
   </head>
   <body>
+    <div class="wrapper indexPage">
     <div class="mainSection">
       <div class="logoContainer">
         <img src="./images/googlelogo.png" alt="" />
@@ -17,6 +18,7 @@
           <input class="searchButton" type="submit" value="Search" />
         </form>
       </div>
+    </div>
     </div>
   </body>
 </html>
