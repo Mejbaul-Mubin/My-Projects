@@ -11,7 +11,6 @@
       <div class="logoContainer">
         <img src="./images/googlelogo.png" alt="" />
       </div>
-
       <div class="searchContainer">
         <form action="search.php" mathod="GET">
           <input class="searchBox" type="text" name="term" />
