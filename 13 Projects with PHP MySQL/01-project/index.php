@@ -40,18 +40,17 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ);
     <div class="container">
         <div class="row mt-5">
             <?php foreach ($allProducts as $product): ?>
-            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
-                <div class="card" >
-                    <img height="213px" class="card-img-top" src="images/<?php echo $product->image; ?>">
-                    <div class="card-body" >
-                        <h5 class="d-inline"><b><?php echo $product->title; ?></b> </h5>
-                        <h5 class="d-inline"><div class="text-muted d-inline">($<?php echo $product->price; ?>/item)</div></h5>
-                        <p><?php echo $product->description; ?></p>
-                         <a href="#"  class="btn btn-primary w-100 rounded my-2"> Pay Now <i class="fas fa-arrow-right"></i> </a>
-
-                    </div>
-                </div>
-            </div>
+                <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+    <div class="card h-100 d-flex flex-column">
+        <img height="213px" class="card-img-top" src="images/<?php echo $product->image; ?>">
+        <div class="card-body flex-grow-1 d-flex flex-column">
+            <h5 class="d-inline"><b><?php echo $product->title; ?></b></h5>
+            <h5 class="d-inline"><div class="text-muted d-inline">($<?php echo $product->price; ?>/item)</div></h5>
+            <p class="flex-grow-1"><?php echo $product->description; ?></p>
+            <a href="#" class="btn btn-primary w-100 rounded my-2 mt-auto">Pay Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
             <?php endforeach;?>
             <br>
 
