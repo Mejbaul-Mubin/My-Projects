@@ -1,7 +1,7 @@
 <?php
 
 define("HOST", "localhost");
-define("DBNAME", "form");
+define("DBNAME", "forum");
 define("USERNAME", "root");
 define("PASSWORD", "");
 
