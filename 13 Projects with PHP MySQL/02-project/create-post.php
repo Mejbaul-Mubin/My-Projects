@@ -72,5 +72,4 @@ VALUES (:title, :post_author, :category, :body)");
 
 
           </div>
-
-          <?php require "includes/footer.php";?>
+<?php require "includes/footer.php";?>
