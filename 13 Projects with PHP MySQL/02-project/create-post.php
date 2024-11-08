@@ -61,9 +61,9 @@ VALUES (:title, :post_author, :category, :body)");
                     <label class="form-label">Choose Category</label>
 
                     <option selected>Choose Category</option>
-                    <option value="1">Design</option>
-                    <option value="2">Marketing</option>
-                    <option value="3">Programming</option>
+                    <option value="Design">Design</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Programming">Programming</option>
                 </select>
 
                 <button name="submit" type="submit" class="btn btn-primary w-100">Submit</button>
