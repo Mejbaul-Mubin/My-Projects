@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  background: #222;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 span {
+  color: #00bcd4;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+}
+
+#services .services-container,
+#projects .project-gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service,
+.project {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+.project-gallery img,
+.skills-icons img {
+  width: 100px;
+  margin: 10px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  background: #333;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+form button {
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  padding: 10px 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.hero-content button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 50%; /* ছবির আকার গোলাকার করতে */
+  box-shadow: 0px 0px 10px rgba(0, 188, 212, 0.5); /* শ্যাডো যোগ করতে */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.hero-content button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 50%; /* ছবির আকার গোলাকার করতে */
+  filter: drop-shadow(0 0 15px rgba(0, 188, 212, 0.8)); /* গ্লো ইফেক্ট */
+}
