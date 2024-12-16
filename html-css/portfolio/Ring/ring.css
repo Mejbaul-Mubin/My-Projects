@@ -1,0 +1,38 @@
+/* ব্যাকগ্রাউন্ড কালো রাখা */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #0d0d0d; /* ডার্ক ব্যাকগ্রাউন্ড */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* নئون রিং */
+.neon-ring {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  background: transparent;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7),
+    /* বাহিরের হালকা গ্লো */ 0 0 40px rgba(0, 255, 255, 0.5),
+    /* আরও হালকা গ্লো */ inset 0 0 20px rgba(0, 255, 255, 0.8),
+    /* ভেতরের হালকা গ্লো */ inset 0 0 40px rgba(0, 255, 255, 0.6); /* গভীর ভেতরের গ্লো */
+  border: 20px solid rgba(0, 255, 255, 0.9); /* রিং এর পুরুত্ব */
+  animation: glow 2s infinite alternate;
+}
+
+/* গ্লো করার অ্যানিমেশন */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5), 0 0 60px rgba(0, 255, 255, 0.4),
+      inset 0 0 20px rgba(0, 255, 255, 0.6),
+      inset 0 0 40px rgba(0, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8), 0 0 80px rgba(0, 255, 255, 0.6),
+      inset 0 0 30px rgba(0, 255, 255, 0.9),
+      inset 0 0 60px rgba(0, 255, 255, 0.7);
+  }
+}
