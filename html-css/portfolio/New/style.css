@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+#container {
+  width: 75%;
+  margin: auto;
+}
+nav {
+  padding: 10px;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -74,7 +82,6 @@ nav ul li a:hover {
 
 .hero-image img {
   width: 350px;
-  border-radius: 50%;
 }
 
 /* Sections */
