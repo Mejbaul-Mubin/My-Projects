@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>প্রজেক্ট ব্রাউজার</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>আমার প্রজেক্ট</h1>
+  <div id="project-list">
+    </div>
+
+  <script>
+    const projectList = document.getElementById('project-list');
+    const projects = ['01', '02', '03']; // আপনার প্রজেক্ট ফোল্ডারের নাম দিন
+
+    projects.forEach(project => {
+      const projectDiv = document.createElement('div');
+      projectDiv.className = 'project';
+
+      const projectLink = document.createElement('a');
+      projectLink.href = `${project}/index.html`; // অথবা আপনার প্রজেক্টের প্রধান ফাইল
+      projectLink.textContent = `প্রজেক্ট ${project}`;
+
+      projectDiv.appendChild(projectLink);
+      projectList.appendChild(projectDiv);
+    });
+  </script>
+</body>
+</html>
